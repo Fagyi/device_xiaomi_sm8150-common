@@ -86,6 +86,8 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys6/restart_level "related"
     write /sys/bus/msm_subsys/devices/subsys7/restart_level "related"
     write /sys/bus/msm_subsys/devices/subsys8/restart_level "related"
+    write /sys/bus/msm_subsys/devices/subsys9/restart_level "related"
+    write /sys/bus/msm_subsys/devices/subsys10/restart_level "related"
 
 on boot
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/state
