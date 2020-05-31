@@ -41,6 +41,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
     android.hardware.audio@5.0-impl \
     android.hardware.audio.effect@5.0-impl \
+    android.hardware.audio.common@2.0-util \
+    android.hardware.audio.common@5.0-util \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.soundtrigger@2.1-impl
 
@@ -59,7 +61,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     tinymix \
-    libaudio-resampler
+    libtinycompress \
+    libtinycompress.vendor \
+    libaudio-resampler \
+    libaudioroute \
+    libhdmiedid \
+    libhfp \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
